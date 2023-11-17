@@ -71,5 +71,6 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
     List<String>lines = file.split("\n");
     verses = lines;
     setState(() {});
+
   }
 }
