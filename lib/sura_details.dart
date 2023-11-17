@@ -48,11 +48,14 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
                 padding: const EdgeInsets.all(8.0),
                 child: ListView.separated(
                   itemBuilder: (context, index) =>
-                  Center(child: Text(
-                    verses[index], textAlign: TextAlign.center, style: Theme
-                      .of(context)
-                      .textTheme
-                      .bodySmall,)),
+                  Center(child: Directionality(
+                    textDirection: TextDirection.rtl,
+                    child: Text(
+                      "${verses[index]}(${index+1})", textAlign: TextAlign.center, style: Theme
+                        .of(context)
+                        .textTheme
+                        .bodySmall,),
+                  )),
                   separatorBuilder: (context,index)=>Divider(
               indent: 40,
               endIndent: 40,

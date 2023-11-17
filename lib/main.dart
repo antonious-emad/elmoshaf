@@ -1,3 +1,4 @@
+import 'package:elmoshaf_el_zhby/hadeth_details.dart';
 import 'package:elmoshaf_el_zhby/home.dart';
 import 'package:elmoshaf_el_zhby/myThemeData.dart';
 import 'package:elmoshaf_el_zhby/sura_details.dart';
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
       routes: {
         HomeScreen.routeName: (context) => HomeScreen(),
         SuraDetailsScreen.routeName: (context) => SuraDetailsScreen(),
+        HadethDetails.routeName: (context) => HadethDetails(),
       },
       theme: MyThemeData.lightTheme,
       darkTheme: MyThemeData.darkTheme,
