@@ -46,7 +46,7 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
               ),
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: ListView.separated(
+                child:verses.isEmpty?Center(child: CircularProgressIndicator(color: MyThemeData.primaryColor,),) :ListView.separated(
                   itemBuilder: (context, index) =>
                   Center(child: Directionality(
                     textDirection: TextDirection.rtl,
